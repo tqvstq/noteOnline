@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>在线笔记</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./css/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '首页',
+      repo: '',
+      axLevel: 5, //最大支持渲染的标题层
+      ubMaxLevel: 3,
+      // homepage: README.md,
+      // 设置封面
+      coverpage: true,
+      // 设置侧边栏
+      loadSidebar: true,
+      // 外链打开方式
+      externalLinkTarget: '_blank',
+      
+      
+      // 搜索插件
+      search: {
+        // maxAge: 86400000 // 过期时间, 单位毫秒, 默认一天
+        paths: 'auto',
+        placeholder: '🔍 本站搜索',
+        noData: '找不到结果',
+        // 搜索标题最大程级   1 - 6
+        depth: 3
+      },
+      // 字数统计展示插件
+      count:{
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese'
+      }
+
+    }
+
+  </script>
+  <!--  Docsify   v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- Java 代码高亮 -->
+  <script src="./js/prism-java.min.js"></script>
+  <!-- properties 代码高亮 -->
+  <script src="./js/prism-properties.min.js"></script>
+  <!-- yaml 代码高亮 -->
+  <script src="./js/prism-yaml.min.js"></script>
+  <!-- xml 代码高亮 -->
+  <script src="./js/prism-xml-doc.min.js"></script>
+  <!-- 搜索插件 -->
+  <script src="./js/search.min.js"></script>
+  <!-- 添加代码块复制快捷键 -->
+  <script src="./js/docsify-copy-code.js"></script>
+  <!-- 字数统计插件 -->
+  <script src="./js/countable.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+</body>
+</html>
