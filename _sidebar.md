@@ -2,20 +2,31 @@
     * [简介](README.md)
 
 
-- <details><summary><b>JAVA基础</b></summary>
-  <p>
 
-    - [equals和等等的区别](JAVA基础/基础面试题/1_equals和等等的区别/README.md)
+- JAVA基础
+    - [常用名词解析](JAVA基础/1_一些名词理解.md)
+    - [equals和等等的区别](JAVA基础/2_equals和等等的区别.md)
+    
 
-  </p>
-  </details>
+- SpringBoot
+    - [SpringBoot依赖配置分离打包](SpringBoot\1_SpringBoot打包架包分离/1_SpringBoot打包架包分离.md)
 
-- <details><summary><b>中间件</b></summary>
-<p>
 
-  
-</p>
-</details>
+
+- 关系型数据库
+    - [常用名词解析](JAVA基础/1_一些名词理解.md)
+
+
+- 非关系型数据库
+    - [常用名词解析](JAVA基础/1_一些名词理解.md)
+
+
+- 中间件
+   - [常用名词解析](JAVA基础/1_一些名词理解.md)
+
+
+
+
 
 
 - <details><summary><b>可展开一级目录</b></summary>
@@ -44,9 +55,9 @@
 
 
 - 资料
-    - [书籍推荐](./docs/materials/book.md)
-    - [Blog推荐](./docs/materials/blog.md)
-    - [文章推荐](./docs/materials/article.md)
+    - [书籍](资料/书籍/README.md)
+    - [Blog](README.md)
+    - [文章推荐](README.md)
 
 - <details><summary><b>生活记录</b></summary>
   <p>

@@ -13,13 +13,15 @@
   <script>
     window.$docsify = {
       name: '首页',
-      repo: '',
       //最大支持渲染的标题层
       axLevel: 5,
       ubMaxLevel: 3,
+      // 主页设置为 README
       // homepage: README.md,
       // 设置封面
       coverpage: true,
+      // 只显示封面
+      onlyCover: true, 
       // 设置侧边栏
       loadSidebar: true,
       // 外链打开方式
@@ -46,8 +48,8 @@
     }
 
   </script>
-  <!--  Docsify   v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- docsify 渲染 -->
+  <script src="./js/docsify.min.js"></script>
   <!-- Java 代码高亮 -->
   <script src="./js/prism-java.min.js"></script>
   <!-- properties 代码高亮 -->
@@ -62,6 +64,5 @@
   <script src="./js/docsify-copy-code.js"></script>
   <!-- 字数统计插件 -->
   <script src="./js/countable.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 </body>
 </html>
