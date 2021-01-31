@@ -6,6 +6,7 @@
 - JAVA基础
     - [常用名词解析](JAVA基础/1_一些名词理解.md)
     - [equals和等等的区别](JAVA基础/2_equals和等等的区别.md)
+    - [Java8新特性](JAVA基础/3_Java8新特性.md)
     
 
 - SpringBoot

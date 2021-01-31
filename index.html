@@ -18,12 +18,16 @@
       ubMaxLevel: 3,
       // 主页设置为 README
       // homepage: README.md,
-      // 设置封面
+      // 设置封面 默认加载的是项目根目录下的_coverpage.md文件
       coverpage: true,
       // 只显示封面
       onlyCover: true, 
-      // 设置侧边栏
+      // 设置侧边栏 默认加载的是项目根目录下的_sidebar.md文件
       loadSidebar: true,
+      // 侧边栏显示当前页面的目录(标题)的深度
+      subMaxLevel: 5,
+      // 设置导航栏 默认加载的是项目根目录下的_navbar.md文件
+      loadNavbar: true,
       // 外链打开方式
       externalLinkTarget: '_blank',
       
@@ -49,7 +53,7 @@
 
   </script>
   <!-- docsify 渲染 -->
-  <script src="./js/docsify.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.11.2/docsify.js"></script>
   <!-- Java 代码高亮 -->
   <script src="./js/prism-java.min.js"></script>
   <!-- properties 代码高亮 -->
