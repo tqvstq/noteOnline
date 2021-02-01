@@ -15,8 +15,8 @@
 - Linux
    - [Linux-简介](Linux/001_Linux基础.md)
 
-- 关系型数据库
-    - [常用名词解析](JAVA基础/1_一些名词理解.md)
+- Nginx
+    - [Nginx基础](Nginx/Nginx.md)
 
 
 - 非关系型数据库

@@ -17,8 +17,5 @@
 <span id="busuanzi_container_site_pv">
     访问次数:<span id="busuanzi_value_site_pv"></span> 
 </span>
-<span id="busuanzi_container_site_uv" > 
-    | 访问人数: <span id="busuanzi_value_site_uv"></span>
-</span>
 
 [开始阅读](README.md)
