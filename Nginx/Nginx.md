@@ -150,11 +150,19 @@ ps -ef | grep nginx
 ```
 /opt/nginx/sbin/nginx -c /opt/nginx/conf/nginx.conf
 ```
-停止服务
+停止服务 快速关闭(暴力) 
+
+**注：**nginx 不建议手动杀死进程，容易导致奇奇怪怪的问题，正常关闭后 会删除记录进程id的文件
 
 ```
 /opt/nginx/sbin/nginx  -s stop
 ```
+停止服务 当worker处理完请求后再关闭
+
+```
+/opt/nginx/sbin/nginx  -s quit
+```
+
 重启重新加载配置(用户几乎无感)
 
  **要所有链接都断开后，配置才会生效**  **不会强制结束正在工作的连接,需要等所有连接都结束才会重启** 
@@ -224,3 +232,4 @@ ps -ef | grep nginx
 
 
 ## Nginx配置负载均衡
+

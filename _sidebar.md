@@ -17,6 +17,9 @@
 
 - Nginx
     - [Nginx基础](Nginx/Nginx.md)
+    - [Nginx不停机升级](Nginx/Nginx不停机升级.md)
+    - [Nginx实现HTTP动态负载均衡](Nginx/Nginx实现HTTP动态负载均衡.md)
+    - [Nginx+LVS+keepalived实现高性能集群](Nginx/Nginx+LVS+keepalived实现高性能集群.md)
 
 
 - 非关系型数据库
