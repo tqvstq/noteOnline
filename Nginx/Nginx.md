@@ -226,10 +226,60 @@ ps -ef | grep nginx
 
 - `location`：#地址匹配设置，支持正则匹配，也支持条件匹配。
 
-  
+  > - =开头表示精确匹配
+  > - ^~ 开头表示uri以某个常规字符串开头，不是正则匹配
+  > - ~ 开头表示区分大小写的正则匹配
+  > - ~* 开头表示不区分大小写的正则匹配
+  > - / 通用匹配, 如果没有其它匹配,任何请求都会匹配到
+ 
+  ![location规则](./Nginx资料/location匹配规则.png)
+- `root`：location和root组合相当于在root指定目录下进行location匹配，location所匹配内容必须保证在root指定目录的子目录，否则配置无效，而且location只能向下匹配，不能匹配location指定目录上一级目录中的内容。。
 
+- `alias`：location与alias组合，将alias配置的值替换location的拦截值,需要保证location匹配目录与alias指定目录级别相同，否则配置无效，与location和root组合相同的是，location所匹配内容也只能向下匹配,使用alias,目录名后面一定要加 /。
 
+- `proxy_pass`：服务实际转发的路  后面有/ 则不用拼接location里的 无则拼接location规则。
 
+- `upstream`：配置负载均衡服务器。
 
-## Nginx配置负载均衡
+  > 1. 配置转发规则 默认轮询  可以使用的  轮询    weight  ip_hash  
+  > 2. 负载均衡服务器  server  ip:port
 
+- `error_page`：用于配置错误页面拦截
+
+###  Nginx配置故障转移
+
+```
+###nginx与上游服务器(真实访问的服务器)超时时间 后端服务器连接的超时时间_发起握手等候响应超时时间
+一般配置 3到5秒
+proxy_connect_timeout 1s;
+###nginx发送给上游服务器(真实访问的服务器)超时时间
+proxy_send_timeout 1s;
+### nginx接受上游服务器(真实访问的服务器)超时时间
+按照业务时间配置
+proxy_read_timeout 1s;
+```
+
+###  Nginx日志切割
+
+/etc/init.d/rsyslog start  #系统日志，如不开启，看不到定时任务日志
+
+/etc/rc.d/init.d/crond start	#定时任务开启
+
+####  编写sh脚本
+```
+#!/bin/bash
+#设置日志文件存放目录
+LOG_HOME="/usr/local/nginx/logs/"
+#备分文件名称
+LOG_PATH_BAK="$(date -d yesterday +%Y%m%d%H%M)"
+#重命名日志文件
+mv ${LOG_HOME}/access.log ${LOG_HOME}/access.${LOG_PATH_BAK}.log
+mv ${LOG_HOME}/error.log ${LOG_HOME}/error.${LOG_PATH_BAK}.log
+#向nginx主进程发信号重新打开日志
+kill -USR1 `cat ${LOG_HOME}/nginx.pid`
+```
+
+####  设定cron定时执行脚本
+```
+*/1 * * * * /usr/local/nginx/sbin/logcut.sh
+```
