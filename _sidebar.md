@@ -10,7 +10,9 @@
     - [Spring](Spring/README.md)
     
 - SpringBoot
-    - [SpringBoot依赖配置分离打包](SpringBoot\1_SpringBoot打包架包分离/1_SpringBoot打包架包分离.md)
+    - [SpringBoot介绍](/SpringBoot/1_SpringBoot介绍.md)
+    - [SpringBoot常用](/SpringBoot/2_SpringBoot常用.md)
+    - [SpringBoot依赖配置分离打包](/SpringBoot/3_SpringBoot打包架包分离.md)
 
 - 数据库
     - [数据库](数据库/README.md)
@@ -70,8 +72,10 @@
    - [工作记录](工作记录/README.md)
   
 - 工具
-    - [IntelliJ IDEA插件](工具/IntelliJ IDEA插件.md)
- 
+    - [IntelliJ_IDEA插件](工具/IntelliJ IDEA插件.md)
+    
+- 搭建部署
+    - [搭建部署](搭建部署/README.md)
 - 资料
     - [书籍](资料/书籍/README.md)
     - [Blog](README.md)
