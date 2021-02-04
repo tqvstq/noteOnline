@@ -81,7 +81,7 @@
         subMaxLevel: 0,
         loadSidebar: null,
         loadNavbar: null,
-        homepage: 'README.md',
+        homepage: '1_Docker介绍及安装.md',
         coverpage: '',
         basePath: '',
         auto2top: false,
