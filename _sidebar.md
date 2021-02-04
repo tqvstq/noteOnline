@@ -72,15 +72,19 @@
    - [工作记录](工作记录/README.md)
   
 - 工具
-    - [IntelliJ_IDEA插件](工具/IntelliJ IDEA插件.md)
+    - [IntelliJ_IDEA插件](工具/IntelliJ_IDEA插件.md)
     
 - 搭建部署
     - [搭建部署](搭建部署/README.md)
+    
+- 其它
+    - [其它](其它/README.md)    
+    
 - 资料
     - [书籍](资料/书籍/README.md)
     - [Blog](README.md)
     - [文章推荐](README.md)
-
+    
 - <details><summary><b>生活记录</b></summary>
   <p>
 
