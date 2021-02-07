@@ -5,6 +5,8 @@
     - [常用名词解析](JAVA基础/1_一些名词理解.md)
     - [基础知识](JAVA基础/2_基础知识.md)
     - [Java8新特性](JAVA基础/3_Java8新特性.md)
+    - [Java中的并发编程](JAVA基础/4_Java中的并发编程.md)
+    - [注解](JAVA基础/5_注解.md)
     
 - Spring
     - [Spring](Spring/README.md)
@@ -13,6 +15,7 @@
     - [SpringBoot介绍](/SpringBoot/1_SpringBoot介绍.md)
     - [SpringBoot常用](/SpringBoot/2_SpringBoot常用.md)
     - [SpringBoot依赖配置分离打包](/SpringBoot/3_SpringBoot打包架包分离.md)
+    - [SpringBoot项目热部署](/SpringBoot/4_SpringBoot项目热部署.md)
 
 - 数据库
     - [数据库](数据库/README.md)
@@ -52,6 +55,7 @@
    - [Kubernetes](Kubernetes/README.md)
 
 - 设计模式
+    - [设计模式简介](设计模式/设计模式简介.md)
     - [创建型设计模式](设计模式/创建型设计模式.md)
     - [结构型设计模式](设计模式/结构型设计模式.md)
     - [行为型设计模式](设计模式/行为型设计模式.md)
