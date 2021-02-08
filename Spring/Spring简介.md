@@ -35,3 +35,9 @@ AOP (面向切面编程) 主要由三个部分: 关注点，切面，切入点
 
 
 ###  AOP编程的使用
+
+
+## Spring 注意知识
+### Spring 的 Controller默认为单例
+> controller默认是单例的，不要使用非静态的成员变量，否则会发生数据逻辑混乱。
+> 如果非必要请不要在controller中定义成员变量,实在无法避免请在类上使用`@Scope(“prototype”)`，将其设置为多例模式。或者使用`ThreadLocal`变量
