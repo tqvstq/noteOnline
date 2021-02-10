@@ -25,7 +25,8 @@
     - [数据库](数据库/README.md)
     
 - 缓存
-    - [缓存](缓存/README.md)
+    - [Redis基础.md](缓存/1_Redis基础.md.md)
+    - [Redis进阶.md](缓存/2_Redis进阶.md)
     
 - 中间件
     - [中间件](中间件/README.md)
@@ -43,7 +44,7 @@
     - [文件存储](文件存储/README.md)
 
 - 权限控制
-    - [权限控制](权限控制/README.md)
+    - [权限控制](权限控制/Shiro.md)
     
 - ElasticStack
     - [ElasticStack](ElasticStack/README.md)
