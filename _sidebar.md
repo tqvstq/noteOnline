@@ -29,7 +29,7 @@
     - [Redis进阶.md](缓存/2_Redis进阶.md)
     
 - 中间件
-    - [中间件](中间件/README.md)
+    - [中间件](中间件/1_ActiveMQ.md)
     
 - Linux
    - [Linux-简介](Linux/001_Linux基础.md)
@@ -87,7 +87,7 @@
     - [搭建部署](搭建部署/README.md)
     
 - 其它
-    - [其它](其它/README.md)    
+    - [XXL-JOB定时任务框架.md](其它/1_XXL-JOB定时任务框架.md)    
     
 - 资料
     - [书籍](资料/书籍/README.md)
