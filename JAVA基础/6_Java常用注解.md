@@ -31,5 +31,10 @@
 - @ContextConfiguration   : 用来加载配置ApplicationContext。
 - @ControllerAdvice    : 全局异常处理类。
 - @ExceptionHandler    : 全局异常处理处理的异常。
+- @ComponentScan    : 用于指定扫包范围不指定默认为当前类所在的包。
+- @EnableAutoConfiguration    : 开启自动配置将Bean加载到SpringBoot。
+- @SpringBootConfiguration    : 用于加载配置类。
+- @SpringBootApplication : 加在SpringBoot项目启动类上,实际等于@ComponentScan + @EnableAutoConfiguration + @SpringBootConfiguration 三个注解
+
 
 

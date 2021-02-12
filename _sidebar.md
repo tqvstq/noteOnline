@@ -22,7 +22,7 @@
     - [SpringBoot统一返回+全局异常处理](/SpringBoot/6_SpringBoot统一返回+全局异常处理.md)
 
 - 数据库
-    - [数据库](数据库/README.md)
+    - [数据库](数据库/1_MySQL基础.md)
     
 - 缓存
     - [Redis基础.md](缓存/1_Redis基础.md.md)
