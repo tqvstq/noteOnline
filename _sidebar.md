@@ -84,7 +84,8 @@
     - [IntelliJ_IDEA插件](工具/IntelliJ_IDEA插件.md)
     
 - 搭建部署
-    - [搭建部署](搭建部署/README.md)
+    - [Linux_安装JDK](搭建部署/Linux_安装JDK.md)
+    - [Linux_安装MySQL数据库](搭建部署/Linux_安装MySQL数据库.md)
     
 - 其它
     - [XXL-JOB定时任务框架.md](其它/1_XXL-JOB定时任务框架.md)    
