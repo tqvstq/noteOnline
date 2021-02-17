@@ -29,7 +29,8 @@
     - [Redis进阶.md](缓存/2_Redis进阶.md)
     
 - 中间件
-    - [中间件](中间件/1_ActiveMQ.md)
+    - [RabbitMQ](中间件/2_RabbitMQ.md)
+    - [ActiveMQ](中间件/1_ActiveMQ.md)
     
 - Linux
    - [Linux-简介](Linux/001_Linux基础.md)
