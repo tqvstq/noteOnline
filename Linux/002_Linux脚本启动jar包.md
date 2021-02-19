@@ -25,7 +25,9 @@ APP_NAME=sznf-ztbs-back-rest-0.0.1.jar
 # 启动jar包的路径
 APP_PATH=/home/4444/ztbs/back
 # 启动jar包后日志输出文件
-APP_LOG_NAME=back_`date +%Y%m%d_%T`.log
+APP_LOG_NAME=back.log
+# 每次启动生成新的日志
+# APP_LOG_NAME=back_`date +%Y%m%d_%T`.log
 # java虚拟机启动参数设置
 JAVA_OPTS="-server -Xms800m -Xmx800m -Xmn256m -Xss256k -XX:PermSize=256M -XX:MaxPermSize=512M -XX:SurvivorRatio=8 -XX:MaxTenuringThreshold=5 -XX:GCTimeRatio=19 -Xnoclassgc -XX:+DisableExplicitGC -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:+UseCMSCompactAtFullCollection -XX:CMSFullGCsBeforeCompaction=0 -XX:-CMSParallelRemarkEnabled -XX:CMSInitiatingOccupancyFraction=70 -XX:SoftRefLRUPolicyMSPerMB=0 -XX:+PrintClassHistogram -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintHeapAtGC -Xloggc:${APP_PATH}/gc.log"
 #脚本菜单项
