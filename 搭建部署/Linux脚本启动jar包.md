@@ -53,7 +53,7 @@ start(){
  echo "${APP_NAME} is already running. pid=${pid} ."
  else
 #此处注意修改jar和log文件位置：
- nohup java ${JAVA_OPTS} -jar ${APP_NAME}/$APP_NAME > $APP_LOG_NAME   2>&1 &
+ nohup java ${JAVA_OPTS} -jar ${APP_PATH}/$APP_NAME > $APP_LOG_NAME   2>&1 &
  # echo "Has started ${APP_NAME}  pid=`ps -ef|grep $APP_NAME|grep -v grep|awk '{print $2}' `  logFileName=`ls -alt | grep log |head -1|awk '{print $9}'`"
  echo "Has started ${APP_NAME}  pid=`ps -ef|grep $APP_NAME|grep -v grep|awk '{print $2}' `  logFilePath=${APP_PATH}/$APP_LOG_NAME"
 #启动后监视输出log日志：
