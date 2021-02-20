@@ -231,7 +231,7 @@ ps -ef | grep nginx
   > - ~ 开头表示区分大小写的正则匹配
   > - ~* 开头表示不区分大小写的正则匹配
   > - / 通用匹配, 如果没有其它匹配,任何请求都会匹配到
- 
+
   ![location规则](./Nginx资料/location匹配规则.png)
 - `root`：location和root组合相当于在root指定目录下进行location匹配，location所匹配内容必须保证在root指定目录的子目录，否则配置无效，而且location只能向下匹配，不能匹配location指定目录上一级目录中的内容。。
 
@@ -245,6 +245,54 @@ ps -ef | grep nginx
   > 2. 负载均衡服务器  server  ip:port
 
 - `error_page`：用于配置错误页面拦截
+
+###  Nginx简单配置转发
+
+```
+server {
+		# 监听端口
+        listen      80;
+        # 配置IP或者域名 配置多个
+        server_name  10.10.10.10 10.10.10.10:11;
+        # 设置默认类型
+        default_type 'text/html';
+       # 设置编码
+        charset utf-8;
+        # 设置上传文件大小
+        client_max_body_size 300M;
+
+        # 配置拦截 用于Nginx的前端页面
+        location /web1 {
+            # 根目录路径
+            root /html/ztbsWeb;
+            # 默认页面
+            index index.html;
+            # 添加头信息 不缓存
+            add_header Cache-Control no-store;
+            # 提示不缓存
+            expires -1;
+        }
+        # 配置后端转发规则
+        location ^~/222/ {
+            # 转发真实地址
+            proxy_pass http://10.10.10.10:10/;
+            # 设置请求头 中的host
+            proxy_set_header Host $host;
+            # 设置请求头 真实IP
+            proxy_set_header X-Real-IP $remote_addr;
+            # 设置请求头 代理信息
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            # 防止返回location暴露信息
+            proxy_redirect off;
+            # 设置带上代理
+            proxy_set_header User-Agent $http_user_agent;
+            # 设置重试
+            proxy_next_upstream http_502 http_504 error timeout invalid_header;
+        }
+        
+}
+
+```
 
 ###  Nginx配置故障转移
 
