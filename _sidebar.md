@@ -8,6 +8,7 @@
     - [Java中的并发编程](JAVA基础/4_Java中的并发编程.md)
     - [注解](JAVA基础/5_注解.md)
     - [Java常用注解](JAVA基础/6_Java常用注解.md)
+    - [事物](JAVA基础/7_事物注意事项.md)
     
 - Spring
     - [Spring简介](Spring/Spring简介.md)

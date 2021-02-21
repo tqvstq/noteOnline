@@ -14,6 +14,7 @@ chmod +x run.sh
 ```shell
 vim run.sh
 ```
+复制这些粘贴进去,按照实际情况修改APP_NAME和APP_PATH  然后保存退出执行脚本测试 个性化可以按照需求自己更改
 ```shell
 #!/bin/bash
 #name:jar包启动脚本;

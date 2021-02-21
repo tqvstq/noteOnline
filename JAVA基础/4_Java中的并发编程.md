@@ -15,13 +15,51 @@
  ####  继承Thread类,重写run方法
 
 ```java
+//继承Thread类 重写run方法 实现
+public class MyThread extends Thread{
+@Override
+public void run(){
+    // 线程业务逻辑
+    System.out.println(Thread.currentThread().getName());
+}
 
+}
+//创建并启动线程
+class Main {
+    public static void main(String[] args){
+        System.out.println(Thread.currentThread().getName());
+        new MyThread().start();
+    }
+
+}
 ```
 
  ####  实现Runnable接口,重写run方法
 
 ```java
+//实现Runnable接口
+public class MyThread implements Runnable {
 
+    public void run() {
+        // 线程业务逻辑
+        System.out.println(Thread.currentThread().getName());
+    }
+
+}
+
+class Main {
+    public static void main(String[] args) {
+        // 创建并启动线程
+        MyThread myThread = new MyThread();
+        Thread thread = new Thread(myThread);
+        thread.start();
+        // 或者 
+        // new Thread(new MyThread()).start();   
+        System.out.println(Thread.currentThread().getName());
+
+    }
+
+}
 ```
 
  ####  使用匿名内部类方式
