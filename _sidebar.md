@@ -105,7 +105,7 @@
     - <details><summary><b>随意</b></summary>
       <p>
 
-        - [面试总结](个人保存/面试总结.md)
+        - [Java常用总结](个人保存/Java常用总结.md)
         - [文章2](README.md)
         - [文章3](README.md)
 
