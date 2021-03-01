@@ -390,6 +390,9 @@ private static ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(cp
 最后我的选择,试了比较久 核心线程数配置的为CPU数 最大线程数配置的2*CPU数
 
 
+## AQS(AbstractQueuedSynchronizer)
+
+
 ## 计算机网络面试知识
 
 ## 数据库
@@ -416,6 +419,20 @@ Java中基本类型都是传递的副本    栈管运行  堆管存储
 ## SpringBoot
 
 ## Nginx
+
+## 基础知识
+### Java常用数据结构有那些?
+1. 线性表（ArrayList）
+2. 链表（LinkedList）
+3. 栈（Stack）
+4. 队列（Queue）
+5. 图（Map）
+6. 树（Tree）
+
+### 常用排序算法
+
+
+
 
 ## 工作经验解决问题流程
 1. 故障现象
