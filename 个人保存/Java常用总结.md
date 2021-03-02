@@ -396,6 +396,48 @@ private static ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(cp
 ## 计算机网络面试知识
 
 ## 数据库
+### MySQL重点
+### explain(模拟优化器执行SQL)
+explain 模拟优化器执行SQL,从而知道MySQL如何处理我们的SQL,知道瓶颈在哪里从而优化SQL
+
+explain 能够查看的信息: 1. 表的读取顺序 2. 数据读取操作的类型 3. 那些索引可以被使用 4. 索引被实际使用  5. 表之间的关系 6. 每张表的查询行数
+- `id`: 表示查询顺序,值越大越先执行,值一样靠上面的先执行
+- `select_type`: 表示查询类型,有 SIMPLE,PRIMARY,UNION,DEPENDENT UNION,UNIOIN RESULT,SUBQUERY,DEPENDENT SUBQUERY,DERIVED,MATERIALIZED,UNCACHEABLE SUBQUERY,UNCACHEABLE UNION
+>- SIMPLE: 简单查询查询中不包含子查询或者UNION
+>- PRIMARY: 
+>- SUBQUERY:
+>- DERIVED:在FROM列表中包含的子查询会被标记为DERIVED(衍生)会递归执行这些子查询,把结果放在临时表中
+>- UNION:
+>- UNIOIN RESULT:
+- `table`: 本次操作的表
+- `type`: 使用索引的类型 执行好坏顺序 system > const > eq_ref > ref > range > index > ALL  7种
+> - system: 表只有一行数据,相当于系统表
+> - const: 在索引树上获取结果
+> - eq_ref: 唯一索引扫描,表中只有一条数据匹配.常见于主键和唯一键
+> - ref: 非唯一索引,返回匹配某个单独值的所有的行
+> - range: 有范围的索引扫描
+> 
+> 一般使用大于range就可以
+> - index:Full Index Scan 遍历索引树,通常比ALL快,ALL从硬盘中读取,Index从索引中读取
+> - ALL: 全表扫描
+- `possible_key`:可能使用到的索引
+- `key`: 实际使用到的索引,如果为 null 则表示没有使用索引
+- `key_len`: 索引字段最大可能长度
+- `ref`: 两表联合时使用的索引,索引的哪一列被使用了
+- `rows`: 表有多少行被优化器 查询
+- `Extra`: 包含不适合展示在其他列但是十分重要的信息
+> 1. Using filesort 不是按照表中索引顺序读取,使用外部索引排序称为文件排序
+> 2. Using temporary 使用临时表
+> 3. Using index 表示select中使用了覆盖索引,避免访问使用表中的数据行,如果没有出现Using where 表示索引用了读取数据而非查找数据(一般是使用索引排序后不符合要求,后面进行在此排序)
+> 4. Using where 使用where进行过滤
+> 5. Using join buffer 使用了连接缓存
+> 6. impossible where where字句的值总是false 不能用于获取任何元组
+> 7. select tables optimized away 
+> 8. distinct distinct进行了优化操作
+
+
+
+
 
 ## Redis
 
