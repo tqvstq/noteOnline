@@ -81,12 +81,13 @@
     - [常见Web安全漏洞](网络安全/常见Web安全漏洞.md)
 
 - 工作记录
-   - [工作记录](工作记录/README.md)
+   - [工作问题解决集合](工作记录/工作问题解决集合.md)
+   - [常见踩坑](工作记录/常见踩坑.md)
   
 - 工具
     - [IntelliJ_IDEA插件](工具/IntelliJ_IDEA插件.md)
     - [Maven](工具/Maven.md)
-    - [Maven](工具/Gradle.md)
+    - [Gradle](工具/Gradle.md)
     
 - 搭建部署
     - [Linux_安装JDK](搭建部署/Linux_安装JDK.md)
