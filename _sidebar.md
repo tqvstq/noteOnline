@@ -89,6 +89,7 @@
     - [Maven](工具/Maven.md)
     - [Gradle](工具/Gradle.md)
     - [WIN10安装虚拟机](工具/虚拟机.md)
+    - [IntelliJ_IDEA使用技巧](工具/IntelliJ_IDEA使用技巧.md)
     
 - 搭建部署
     - [Linux_安装JDK](搭建部署/Linux_安装JDK.md)

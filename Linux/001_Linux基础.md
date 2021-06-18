@@ -292,7 +292,7 @@ vi /etc/ssh/sshd_config
 
 # Authentication:
 LoginGraceTime 2m
-// 如果有静止密码登陆的需要注释
+// 如果有禁止密码登陆的需要注释
 PermitRootLogin yes                             //加入此行
 StrictModes yes
 
