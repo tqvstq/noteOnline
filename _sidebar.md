@@ -69,6 +69,7 @@
    
 - JVM
     - [JVM](JVM/JVisualVM使用.md)
+    - [JVM](JVM/dump.md)
  
    
 - 数据结构
