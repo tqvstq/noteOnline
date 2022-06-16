@@ -68,7 +68,7 @@
     - [行为型设计模式](设计模式/行为型设计模式.md)
    
 - JVM
-    - [JVM](JVM/README.md)
+    - [JVM](JVM/JVisualVM使用.md)
  
    
 - 数据结构
