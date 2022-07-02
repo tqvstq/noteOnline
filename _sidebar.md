@@ -97,6 +97,7 @@
     - [Linux_安装MySQL数据库](搭建部署/Linux_安装MySQL数据库.md)
     - [Linux脚本启动jar包](搭建部署/Linux脚本启动jar包.md)
     - [docsify搭建在线文档](搭建部署/docsify搭建在线文档.md)
+    - [Linux安装Redis哨兵集群](搭建部署/Linux_安装Redis哨兵集群.md)
     
 - 其它
     - [XXL-JOB定时任务框架](其它/1_XXL-JOB定时任务框架.md)    
