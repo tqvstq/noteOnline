@@ -6,7 +6,7 @@
 
    去官网下载相应的安装包：[官网下载地址](https://redis.io/download) ，我直接选择最新稳定版安装
 
-![redis 官网](/Users/edy/private/markdown/Linux 安装Redis哨兵集群资料/redis 官网.png)
+![redis 官网](./Linux_安装Redis哨兵集群资料/redis官网.png)
 
 ​       也可以直接用命令下载
 
@@ -22,19 +22,19 @@ wget https://download.redis.io/redis-stable.tar.gz
 tar -zxvf redis-7.0.2.tar.gz
 ```
 
-​      解压后如图
+解压后如图
 
-![解压redis安装包后](/Users/edy/private/markdown/Linux 安装Redis哨兵集群资料/解压redis安装包后.png)
+![解压redis安装包后](./Linux_安装Redis哨兵集群资料/解压redis安装包后.png)
 
 3. #### 编译文件
 
-​       进入解压出来的文件目录，并执行编译
+进入解压出来的文件目录，并执行编译
 
 ```linux
 cd redis-7.0.2/ & make
 ```
 
-![开始编译](/Users/edy/private/markdown/Linux 安装Redis哨兵集群资料/开始编译.png)
+![开始编译](Linux_安装Redis哨兵集群资料/开始编译.png)
 
 4. 安装
 
@@ -43,11 +43,11 @@ cd redis-7.0.2/ & make
 ```linux
 cd src/ & make install
 ```
-![安装](/Users/edy/private/markdown/Linux 安装Redis哨兵集群资料/安装.png)
+![安装](Linux_安装Redis哨兵集群资料/安装.png)
 
    如果权限不足，请使用root 账号，或者使用 sudo 提权命令重新运行命令
 
-![权限不足](/Users/edy/private/markdown/Linux 安装Redis哨兵集群资料/权限不足.png)
+![权限不足](Linux_安装Redis哨兵集群资料/权限不足.png)
 
 5. #### 安装完成
 
@@ -120,7 +120,7 @@ pidfile /var/run/redis_6380.pid
 replicaof 192.168.8.110 6379
 ```
 
-![redis 配置](/Users/edy/private/markdown/Linux 安装Redis哨兵集群资料/redis 配置.png)
+![redis 配置](Linux_安装Redis哨兵集群资料/redis配置.png)
 
 7. #### 启动集群
 
@@ -159,7 +159,7 @@ sentinel failover-timeout mymaster 180000
 其他的可以不做更改，具体的可以看配置文件里的介绍，注意此时使用的是单机不同端口搭建的，修改配置文件，记得修改为响应端口配置
 ```
 
-![哨兵配置](/Users/edy/private/markdown/Linux 安装Redis哨兵集群资料/哨兵配置.png)
+![哨兵配置](Linux_安装Redis哨兵集群资料/哨兵配置.png)
 
 
 
