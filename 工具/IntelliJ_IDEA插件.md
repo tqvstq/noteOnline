@@ -55,13 +55,16 @@ IDEA 好用插件
 27. HTTP Client 插件,可以用于请求测试,同时他使用的为.http文件后缀,可以放项目中提交git保存
 
 28. JUnitGenerator 用于快速生成单元测试类
-
-29. Statistic 统计项目的代码行数, 一个项目的纯代码行数，往往和项目的复杂程度成正比。而越多的注释占比，大概率是一个良心工程师写的代码。
+    Statistic
+29.  统计项目的代码行数, 一个项目的纯代码行数，往往和项目的复杂程度成正比。而越多的注释占比，大概率是一个良心工程师写的代码。
 
 30. UML 在类图中，选中父类后，可以通过快捷键获取到所有子类。 Windows 使用ctrl+alt+b快捷键，MacOS 使用option+command+b快捷键。
 
 31. any-rule 正则表达式库, 搜索常用的正则表达式, Windows 使用alt+a快捷键，MacOS 使用option+a快捷键
 
-31. String Manipulation 字符串处理插件,如大小写转换,下滑线驼峰转换等字符常用操作
+32. String Manipulation 字符串处理插件,如大小写转换,下滑线驼峰转换等字符常用操作
 
+33. GenerateSerialVersionUID 用于生成uuid
+
+34. maven-search  maven 依赖搜索
 
